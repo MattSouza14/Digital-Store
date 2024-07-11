@@ -76,17 +76,13 @@ main {
     font-weight: bold;
     }
 }
-.card1 {
+.myCard {
     height: 245px;
     width: 395px;
+    margin: 0px 5px;
     border-radius: 8px;
-    background-position: 157px;
-    background-repeat: no-repeat;
     background-color: #D8E3F2;
-    background-image: url('img/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt.png');
-
     
-
     div {
 
         width: 225px;
@@ -117,4 +113,20 @@ main {
             
         }
     }
+}
+
+.card1 {
+    background-position: 157px;
+    background-repeat: no-repeat;
+    background-image: url('img/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt.png');
+}
+.card2 {
+    background-position: 157px;
+    background-repeat: no-repeat;
+    background-image: url('img/tenis.png');
+}
+.card3{
+    background-position: 157px;
+    background-repeat: no-repeat;
+    background-image: url('img/fones.png');
 }
