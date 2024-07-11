@@ -1,0 +1,17 @@
+body{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px;
+gap: 20px;
+
+position: absolute;
+width: 308px;
+height: 720px;
+left: 100px;
+top: 332px;
+
+background: #FFFFFF;
+border-radius: 4px;
+
+}
