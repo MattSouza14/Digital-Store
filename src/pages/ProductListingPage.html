@@ -8,42 +8,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Document</title>
-    <style>
-        body {
-            padding-top: 80px; 
-        }
-        .imga {
-            width: 600px;
-            height: 571px;
-            top: 274px;
-            left: 100px;
-            gap: 0px;
-            border-radius: 4px 0px 0px 0px;
-            opacity: 0px;
-        }
-        .carousel-item {
-            text-align: center; 
-        }
-        .bg-info {
-            padding: 20px;
-        }
-        /* Classe referente as estrelinhas (o conjunto dentro da div) */
-        .avaliacao {     
-            position: absolute;
-            top: 43%;
-            left: 710px;
-            transform: translate(-40%, -40%);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 20px;
-            color: #a73131;
-        }
-        .checked {
-            color: orange; 
-        }
-        .tamanho {
-      margin-right: 10px; /* Aumenta o espaço entre os botões de tamanho */
+<style>
+    :root{
+    
+        --primary: #C92071;
+        --secondary: #B5B6F2;
+        --tertiary: #991956;
+        --error: #EE4266;
+        --success: #52CA76;
+        --warning: #F6AA1C;
+
+    }
+    body {
+        padding-top: 80px; 
+    }
+    .imga {
+        width: 600px;
+        height: 571px;
+        top: 274px;
+        left: 100px;
+        gap: 0px;
+        border-radius: 4px 0px 0px 0px;
+        opacity: 0px;
+    }
+    .carousel-item {
+        text-align: center; 
+    }
+    .bg-info {
+        padding: 20px;
+    }
+    /* Classe referente as estrelinhas (o conjunto dentro da div) */
+    .avaliacao {     
+        position: absolute;
+        top: 43%;
+        left: 710px;
+        transform: translate(-40%, -40%);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+        color: #a73131;
+    }
+    .checked {
+        color: orange; 
+    }
+    .tamanho /* seleção do tamanho do tênis*/ { 
+        margin-right: 10px; 
         width: 48px;
         height: 48px;
         gap: 0px;
@@ -51,6 +61,19 @@
         opacity: 0px;
 
     }
+    .btn_selecao {
+        width: 117px;
+        height: 96px;
+        border-radius: 4px;
+        margin-right: 10px;
+        background-color: var(--primary); 
+        border-color: var(--primary); 
+    }
+    .btn_selecao:active {
+        background-color: var(--tertiary); 
+        border-color: var(--tertiary); 
+    }
+   
     </style>
 </head>
 <body>
@@ -85,10 +108,10 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-6 bg-light ">
+            <div class="col-md-6 bg-light">
                 <h1>Tênis Nike Revolution <br> 6 Next Nature Masculino</h1>
                 <p>Casual | Nike | REF:38416711</p>
-                <div class="avaliacao">
+                <div class="avaliacao"> <!-- estrelinhas de avaliaçâo -->
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -98,28 +121,52 @@
                 <div class="container mt-5">
                     <h3 class="text-muted mb-6">Tamanho:</h3>
                     <div class="btn-group mt-3" role="group" aria-label="Tamanhos Disponíveis">
-                      <button type="button" class="btn btn-outline-primary tamanho rounded">39</button>
-                      <button type="button" class="btn btn-outline-primary tamanho rounded">40</button>
-                      <button type="button" class="btn btn-outline-primary tamanho rounded">41</button>
-                      <button type="button" class="btn btn-outline-primary tamanho rounded">42</button>
-                      <button type="button" class="btn btn-outline-primary tamanho rounded">43</button>
+                        <button type="button" class="btn btn-outline-primary tamanho rounded">39</button>
+                        <button type="button" class="btn btn-outline-primary tamanho rounded">40</button>
+                        <button type="button" class="btn btn-outline-primary tamanho rounded">41</button>
+                        <button type="button" class="btn btn-outline-primary tamanho rounded">42</button>
+                        <button type="button" class="btn btn-outline-primary tamanho rounded">43</button>
                     </div>
-                  </div>
-                  
-
-                
-                  
+                </div>
+            </div>
+        </div>
+    
+        <!-- Seleção de tênis por imagem -->
+        <div class="row mt-5 container_selecao">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-primary btn_selecao" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">
+                    <img src="tenis 1.png" class="img-fluid" alt="...">
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-primary btn_selecao" data-bs-target="#carouselExampleControls" data-bs-slide-to="1">
+                    <img src="tenis 2.png" class="img-fluid" alt="...">
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-primary btn_selecao" data-bs-target="#carouselExampleControls" data-bs-slide-to="2">
+                    <img src="tenis 3.png" class="img-fluid" alt="...">
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-primary btn_selecao" data-bs-target="#carouselExampleControls" data-bs-slide-to="3">
+                    <img src="tenis 4.png" class="img-fluid" alt="...">
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-primary btn_selecao " data-bs-target="#carouselExampleControls" data-bs-slide-to="4">
+                    <img src="tenis 5.png" class="img-fluid" alt="...">
+                </button>
             </div>
         </div>
     </main>
-
+    
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container text-center">
             Rodapé
         </div>
     </footer>
 
-    <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QFjKkE5Z1BJV/cfQxkWJfVfl/AJmwP0p8 + X4M7RA / JkEL / qzV9 + uz7 + O7 / Cz2SQf" crossorigin="anonymous"></script>
 </body>
 </html>
