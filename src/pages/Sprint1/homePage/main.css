@@ -22,9 +22,9 @@
     
 }
 
-/* main {
-    
-} */
+main {
+    background-color: #f5f5f58a;
+}
 
 .carrosel1 {
     background-color: var(--light-gray-3);
@@ -33,7 +33,7 @@
     .carroselTexto{
         width: 480px;
         margin-top: 120px;
-        margin-left: 80px;
+        margin-left: 90px;
 
         .p1{
             font-weight: bold;
@@ -65,9 +65,13 @@
 }
 
 
-
+.tituloCards {
+    margin: 40px 0px 0px 95px;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+}
 .cards {
-    margin: 20px 70px;
+    margin: 20px 90px;
 
     h1 {
     color: var(--dark-gray-2);
@@ -79,7 +83,7 @@
 .myCard {
     height: 245px;
     width: 395px;
-    margin: 0px 5px;
+    margin: 0px 6px;
     border-radius: 8px;
     background-color: #D8E3F2;
     
@@ -130,3 +134,53 @@
     background-repeat: no-repeat;
     background-image: url('img/fones.png');
 }
+
+.tituloIcones {
+    align-self: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--dark-gray-2);
+}
+.icones {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 700px;
+    margin-bottom: 100px;
+    
+    div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+        p {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--dark-gray-2);
+            margin-top: 15px;
+        }
+    }
+}
+
+.tituloProdutos {
+    margin: 40px 0px 0px 95px;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+    margin-left: 90px;
+}
+
