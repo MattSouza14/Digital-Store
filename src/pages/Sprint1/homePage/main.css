@@ -23,7 +23,7 @@
 }
 
 main {
-    background-color: #f5f5f58a;
+    background-color:#F9F8FE;
 }
 
 .carrosel1 {
@@ -94,16 +94,7 @@ main {
         padding-top: 35px;
 
         p {
-            display: flex;
-            width: 100px;
-            margin: 0px;
-            border-radius: 29px;
-            padding: 6px;
-            color: var(--dark-gray-2);
-            font-size: 14px;
-            font-weight: bold;
-            background-color: #E7FF86;
-            justify-content: center;
+            
         }
 
         h3 {
@@ -117,6 +108,18 @@ main {
             
         }
     }
+}
+.descontos {
+    display: flex;
+    width: 100px;
+    margin: 0px;
+    border-radius: 29px;
+    padding: 6px;
+    color: var(--dark-gray-2);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #E7FF86;
+    justify-content: center;
 }
 
 .card1 {
@@ -184,3 +187,9 @@ main {
     margin-left: 90px;
 }
 
+.cardsProdutos {
+
+}
+.produtoImage {
+
+}
