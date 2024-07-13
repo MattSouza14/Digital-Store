@@ -182,13 +182,23 @@ main {
 }
 
 .tituloProdutos {
-    margin-right: 95px;
+    margin-right: 190px;
     display: flex;
     justify-content: space-between;
     h1 {
         font-weight: bold;
         color: var(--dark-gray-2);
         margin-left: 90px;
+    }
+    a {
+        color: var(--primary);
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+
+        img {
+            margin-left: 10px;
+        }
     }
     
 }
