@@ -31,25 +31,29 @@ main {
     padding-bottom: 140px;
 
     .carroselTexto{
-        width: 480px;
+        width: 470px;
         margin-top: 120px;
         margin-left: 90px;
 
         .p1{
-            font-weight: bold;
+            font-weight: 700;
             color: var(--warning);
-            font-size: 20px;
+            font-size: 16px;
         }
 
         h1{
-            font-weight: bold;
-            font-size: 65px;
+            color: var(--dark-gray);
+            font-weight: 800;
+            font-size: 64px;
+            
         } 
         
         .p2{
+            font-weight: 400;
             margin-top: 20px;
             color: var(--dark-gray-2);
-            font-size:20px;
+            font-size:18px;
+            line-height: 34px;
         }
     }
 
